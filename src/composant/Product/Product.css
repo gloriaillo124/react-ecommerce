@@ -1,0 +1,71 @@
+/* Product.css */
+/* Container.css */
+
+.container {
+    display: flex; /* Ajoutez cette ligne pour aligner horizontalement les produits dans le conteneur */
+    flex-wrap: wrap; /* Permet aux produits de passer à la ligne si l'espace est insuffisant */
+    justify-content: space-between; /* Ajoutez cet espace entre les produits */
+}
+
+/* ... (autres styles restent les mêmes) */
+
+.product-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    display: flex; /* Ajoutez cette ligne pour permettre aux produits d'être alignés horizontalement */
+    flex-direction: column; /* Laissez la direction en colonne pour conserver la structure interne du produit */
+
+    /* Ajoutez d'autres styles selon vos besoins */
+}
+
+.product-badge {
+    position: relative;
+    color: #999;
+    background-color: aqua;
+}
+
+.product-image img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Garantit que l'image conserve ses proportions d'origine */
+}
+
+.product-details {
+    padding: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Ajoutez une marge en bas du nom du produit */
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-sold-price {
+    color: green; /* Couleur du prix soldé */
+}
+
+.product-regular-price {
+    color: #999; /* Couleur du prix régulier */
+    margin-left: 10px; /* Ajoutez une marge à gauche du prix régulier */
+}
+
+.product-reviews {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Ajoutez une marge en haut des évaluations */
+}
+
+.product-reviews i {
+    color: gold; /* Couleur des étoiles d'évaluation */
+    margin-right: 2px; /* Ajoutez une marge à droite des étoiles */
+}
+
+.product-reviews span {
+    margin-left: 5px; /* Ajoutez une marge à gauche du texte des évaluations */
+}

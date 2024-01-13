@@ -1,4 +1,8 @@
-nav{
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     gap: 20px;
     background-color: teal;
@@ -8,4 +12,5 @@ nav{
     line-height: 70px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1000; /* Assurez-vous que le z-index est suffisamment élevé pour être au-dessus du contenu. */
 }
